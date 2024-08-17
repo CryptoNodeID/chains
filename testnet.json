@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "title": "Cross Finance",
+        "name": "Cross Finance",
+        "chain_id": "crossfi-evm-testnet-1",
+        "rpc_url": "https://crossfi-testnet-rpc.cryptonode.id",
+        "api_url": "https://crossfi-testnet-api.cryptonode.id",
+        "explorer_url": "https://testnet.cryptonode.id",
+        "logo": "/logos/testnet.png"
+    }
+]
