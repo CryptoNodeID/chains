@@ -2,10 +2,11 @@
     {
         "title": "Cross Finance",
         "name": "Cross Finance",
-        "chain_id": "mineplex-chain-1",
+        "chain_id": "mineplex-mainnet-1",
+        "latest_version": "v0.1.1",
         "rpc_url": "https://crossfi-mainnet-rpc.cryptonode.id",
         "api_url": "https://crossfi-mainnet-api.cryptonode.id",
-        "explorer_url": "https://explorer.crossfi.com",
+        "explorer_url": "https://explorer.cryptonode.id",
         "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
         "statesync": "SNAP_RPC=https://crossfi-mainnet-rpc.cryptonode.id:443\nsudo systemctl stop crossfid\nmv $HOME/.mineplex-chain/data/priv_validator_state.json $HOME/.mineplex-chain/priv_validator_state.json.backup\ncrossfid tendermint unsafe-reset-all --keep-addr-book --home $HOME/.mineplex-chain\nLATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height);\nLATEST_HEIGHT=$(echo \"$LATEST_HEIGHT\" | awk '{printf \"%d000\\n\", $0 / 1000}')\nBLOCK_HEIGHT=$((LATEST_HEIGHT - 1000));\nTRUST_HASH=$(\"$SNAP_RPC/block?height=$BLOCK_HEIGHT\" | jq -r .result.block_id.hash)\necho $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH\nsed -i \\\n    -e \"s|^.*enable *=.*|enable = \\\"true\\\"|\" \\\n    -e \"s|^.*rpc_servers *=.*|rpc_servers = \\\"$SNAP_RPC,$SNAP_RPC\\\"|\" \\\n    -e \"s|^.*trust_height *=.*|trust_height = $BLOCK_HEIGHT|\" \\\n    -e \"s|^.*trust_hash *=.*|trust_hash = \\\"$TRUST_HASH\\\"|\" \\\n    $HOME/.mineplex-chain/config/config.toml\nmv $HOME/.mineplex-chain/priv_validator_state.json.backup $HOME/.mineplex-chain/data/priv_validator_state.json\nsudo systemctl start crossfid"
     },
