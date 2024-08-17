@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "Cross Finance",
+        "name": "Cross Finance",
+        "chain_id": "mineplex-chain-1",
+        "rpc_url": "https://crossfi-mainnet-rpc.cryptonode.id",
+        "api_url": "https://crossfi-mainnet-api.cryptonode.id",
+        "explorer_url": "https://explorer.crossfi.com",
+        "logo": "/logos/crossfi.png"
+    },
+    {
+        "id": "2",
+        "title": "Humanode",
+        "name": "Humanode",
+        "chain_id": "",
+        "rpc_url": "",
+        "api_url": "",
+        "explorer_url": "",
+        "logo": "/logos/humanode.png"
+    }
+]
