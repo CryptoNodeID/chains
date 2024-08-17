@@ -1,12 +1,20 @@
 [
     {
-        "id": "1",
+        "title": "Airchains",
+        "name": "Airchains",
+        "chain_id": "crossfi-evm-testnet-1",
+        "rpc_url": "https://airchain-testnet-rpc.cryptonode.id",
+        "api_url": "https://airchain-testnet-api.cryptonode.id",
+        "explorer_url": "https://testnet.cryptonode.id",
+        "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/airchain.png"
+    },
+    {
         "title": "Cross Finance",
         "name": "Cross Finance",
         "chain_id": "crossfi-evm-testnet-1",
         "rpc_url": "https://crossfi-testnet-rpc.cryptonode.id",
         "api_url": "https://crossfi-testnet-api.cryptonode.id",
         "explorer_url": "https://testnet.cryptonode.id",
-        "logo": "/logos/testnet.png"
+        "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png"
     }
 ]
