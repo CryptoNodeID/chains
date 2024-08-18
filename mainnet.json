@@ -14,7 +14,14 @@
         "delegate": "mxvaloper1r4c4ggz5t643kqgnjt9jww42lzfy03ktusuduc",
         "rpc_url": "https://crossfi-mainnet-rpc.cryptonode.id",
         "api_url": "https://crossfi-mainnet-api.cryptonode.id",
-        "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png"
+        "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
+        "snapshot": [
+            {
+                "latest_height": 7740720,
+                "timestamp": "2024-08-18_11:32:57",
+                "size": "8.1 GB"
+            }
+        ]
     },
     {
         "title": "Humanode",
