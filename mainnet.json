@@ -2,6 +2,7 @@
     {
         "title": "Cross Finance",
         "name": "crossfi",
+        "type": "cosmos",
         "default": [ 
             {
                 "binary_name": "crossfid",
