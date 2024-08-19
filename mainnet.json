@@ -12,6 +12,7 @@
     "chain_id": "mineplex-mainnet-1",
     "latest_version": "v0.1.1",
     "delegate": "mxvaloper1r4c4ggz5t643kqgnjt9jww42lzfy03ktusuduc",
+    "peers": "51d4372d05ff75f7c3eb49fbec1a83a974f2aae2@sentry1.cnd.biz.id:30656,1985bfd22cf1baeb5aaae6b40b13632c28303bd1@sentry2.cnd.biz.id:30656",
     "rpc_url": "https://crossfi-mainnet-rpc.cryptonode.id",
     "api_url": "https://crossfi-mainnet-api.cryptonode.id",
     "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
