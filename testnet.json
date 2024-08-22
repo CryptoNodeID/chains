@@ -40,7 +40,7 @@
       ],
       "chain_id": "empe-testnet-2",
       "latest_version": "v0.1.0",
-      "binary_url": "",
+      "binary_url": "https://github.com/empe-io/empe-chain-releases/raw/master/v0.1.0/emped_linux_amd64.tar.gz",
       "build_repo_url": "",
       "denom": "uempe",
       "delegate": "empevaloper1vs2wljsf6qg6mgwjr7zfgmp0w8525wupp3f3p7",
@@ -49,6 +49,36 @@
       "rpc_url": "https://empeiria-testnet-rpc.cryptonode.id",
       "api_url": "https://empeiria-testnet-api.cryptonode.id",
       "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/empe.png",
+      "snapshot": [
+        {
+          "latest_height": 0,
+          "timestamp": "",
+          "size": ""
+        }
+      ]
+    }
+    ,
+    {
+      "title": "Symphony",
+      "name": "symphony",
+      "type": "cosmos",
+      "default": [
+        {
+          "binary_name": "symphonyd",
+          "home_path": "$HOME/.symphonyd"
+        }
+      ],
+      "chain_id": "symphony-testnet-3",
+      "latest_version": "v0.3.0",
+      "binary_url": "",
+      "build_repo_url": "https://github.com/Orchestra-Labs/symphony",
+      "denom": "note",
+      "delegate": "empevaloper1vs2wljsf6qg6mgwjr7zfgmp0w8525wupp3f3p7",
+      "peers": "a495c12eac37c0eb92ae8b2af5bcc7ede5534772@sentry1.cryptonode.id:23656,62e9d523037900103da58d27398549a11444f032@sentry2.cryptonode.id:23656",
+      "public_peers": "",
+      "rpc_url": "https://symphony-testnet-rpc.cryptonode.id",
+      "api_url": "https://symphony-testnet-api.cryptonode.id",
+      "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/symphony.png",
       "snapshot": [
         {
           "latest_height": 0,
