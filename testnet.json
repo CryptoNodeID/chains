@@ -1,20 +1,61 @@
 [
     {
-        "title": "Airchains",
-        "name": "Airchains",
-        "chain_id": "crossfi-evm-testnet-1",
-        "rpc_url": "https://airchain-testnet-rpc.cryptonode.id",
-        "api_url": "https://airchain-testnet-api.cryptonode.id",
-        "explorer_url": "https://testnet.cryptonode.id",
-        "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/airchain.png"
+      "title": "Cross Finance",
+      "name": "crossfi",
+      "type": "cosmos",
+      "default": [
+        {
+          "binary_name": "crossfid",
+          "home_path": "$HOME/.crossfid"
+        }
+      ],
+      "chain_id": "crossfi-evm-testnet-1",
+      "latest_version": "v0.3.0",
+      "binary_url": "",
+      "build_repo_url": "",
+      "denom": "mpx",
+      "delegate": "mxvaloper17rcy08cjnwsagglylmclfx85j8ss9lepvd4jdu",
+      "peers": "d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@sentry1.cryptonode.id:20656",
+      "public_peers": "",
+      "rpc_url": "https://crossfi-testnet-rpc.cryptonode.id",
+      "api_url": "https://crossfi-testnet-api.cryptonode.id",
+      "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
+      "snapshot": [
+        {
+          "latest_height": 0,
+          "timestamp": "=",
+          "size": "="
+        }
+      ]
     },
     {
-        "title": "Cross Finance",
-        "name": "Cross Finance",
-        "chain_id": "crossfi-evm-testnet-1",
-        "rpc_url": "https://crossfi-testnet-rpc.cryptonode.id",
-        "api_url": "https://crossfi-testnet-api.cryptonode.id",
-        "explorer_url": "https://testnet.cryptonode.id",
-        "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png"
+      "title": "Empeiria",
+      "name": "empe",
+      "type": "cosmos",
+      "default": [
+        {
+          "binary_name": "emped",
+          "home_path": "$HOME/.empe-chain"
+        }
+      ],
+      "chain_id": "empe-testnet-2",
+      "latest_version": "v0.1.0",
+      "binary_url": "",
+      "build_repo_url": "",
+      "denom": "uempe",
+      "delegate": "empevaloper1vs2wljsf6qg6mgwjr7zfgmp0w8525wupp3f3p7",
+      "peers": "f1e730c741c7edb89e4610e2f24993c5ca2e028b@sentry1.cryptonode.id:22656,66ac611ba87753e92f1e5d792a2b19d4c5080f32@sentry2.cryptonode.id:22656",
+      "public_peers": "",
+      "rpc_url": "https://empeiria-testnet-rpc.cryptonode.id",
+      "api_url": "https://empeiria-testnet-api.cryptonode.id",
+      "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/empe.png",
+      "snapshot": [
+        {
+          "latest_height": 0,
+          "timestamp": "",
+          "size": ""
+        }
+      ]
     }
-]
+  ]
+  
