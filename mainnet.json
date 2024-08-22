@@ -30,11 +30,12 @@
   },
   {
     "title": "Humanode",
-    "name": "Humanode",
-    "chain_id": "",
-    "rpc_url": "",
-    "api_url": "",
-    "explorer_url": "",
+    "name": "humanode",
+    "chain_id": "5234",
+    "latest_version": "5657d6ef75b212ad06a5ddae48bc4d5f70adebbe",
+    "rpc_url": "https://explorer-rpc-http.mainnet.stages.humanode.io",
+    "api_url": "https://explorer-api-sidecar.mainnet.stages.humanode.io",
+    "explorer_url": "https://humanode.subscan.io/",
     "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/humanode.png"
   }
 ]
