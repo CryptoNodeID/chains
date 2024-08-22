@@ -15,7 +15,7 @@
       "build_repo_url": "",
       "denom": "mpx",
       "delegate": "mxvaloper17rcy08cjnwsagglylmclfx85j8ss9lepvd4jdu",
-      "peers": "d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@sentry1.cryptonode.id:20656",
+      "peers": "d5bd5ea9c3fab054d6cd1fee92fc3ac79827f391@sentry1.cryptonode.id:20656,551b0407fc19de1ad69d26738bc59b5eeb678454@sentry2.cryptonode.id:20656",
       "public_peers": "",
       "rpc_url": "https://crossfi-testnet-rpc.cryptonode.id",
       "api_url": "https://crossfi-testnet-api.cryptonode.id",
