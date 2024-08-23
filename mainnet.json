@@ -31,7 +31,7 @@
   {
     "title": "Humanode",
     "name": "humanode",
-    "chain_id": "5234",
+    "chain_id": "Humanode Mainnet - 5234 (0x1472 in hex)",
     "latest_version": "5657d6ef75b212ad06a5ddae48bc4d5f70adebbe",
     "rpc_url": "https://explorer-rpc-http.mainnet.stages.humanode.io",
     "api_url": "https://explorer-api-sidecar.mainnet.stages.humanode.io",
