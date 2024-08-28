@@ -43,8 +43,8 @@
         }
       ],
       "chain_id": "empe-testnet-2",
-      "latest_version": "v0.1.0",
-      "binary_url": "https://github.com/empe-io/empe-chain-releases/raw/master/v0.1.0/emped_linux_amd64.tar.gz",
+      "latest_version": "v0.2.2",
+      "binary_url": "https://github.com/empe-io/empe-chain-releases/raw/master/v0.2.2/emped_v0.2.2_linux_amd64.tar.gz",
       "build_repo_url": "",
       "denom": "uempe",
       "addr_prefix": "empe",
