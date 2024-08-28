@@ -11,11 +11,11 @@ jobs:
     - name: Deploy to Server
       uses: appleboy/ssh-action@master
       env:
-        WORKDIR: ${{ secrets.GHCNIDWS }}
+        WORKDIR: ${{ secrets.GHCNIDWS-github_cnid_ssh }}
       with:
-        host: ${{ secrets.GHCNIDHOST }}
-        username: ${{ secrets.GHCNIDUSER }}
-        key: ${{ secrets.GHCNIDSSHPK }}
+        host: ${{ secrets.GHCNIDHOST-github_cnid_ssh }}
+        username: ${{ secrets.GHCNIDUSER-github_cnid_ssh }}
+        key: ${{ secrets.GHCNIDSSHPK-github_cnid_ssh }}
         script: |
                     sleep 300
                     pm2 stop site1
