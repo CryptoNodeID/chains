@@ -8,15 +8,15 @@ jobs:
     name: Rebuild
     runs-on: ubuntu-latest
     steps:
-    - name: Down LB Site1
+    - name: Failover to Site2
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.GHCNIDLB }}
+        host: ${{ secrets.GHCNIDHOST }}
         username: ${{ secrets.GHCNIDUSER }}
         key: ${{ secrets.GHCNIDSSHPK }}
         script: |
                     sleep 300
-                    sudo /usr/bin/sed -i 's/server websrv.cnid:58898 fail_timeout=2s max_fails=2;/server websrv.cnid:58898 fail_timeout=2s max_fails=2 down;/g' /etc/nginx/sites-available/cryptonodeid.conf
+                    sudo /usr/bin/sed -i 's/root /home/cnid/cryptonodeid/site1/dist;/root /home/cnid/cryptonodeid/site2/dist;/g' /etc/nginx/sites-available/cryptonodeid
                     sudo /usr/bin/systemctl reload nginx.service
     - name: Rebuild Site1
       uses: appleboy/ssh-action@master
@@ -31,14 +31,14 @@ jobs:
     - name: Up LB Site1
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.GHCNIDLB }}
+        host: ${{ secrets.GHCNIDHOST }}
         username: ${{ secrets.GHCNIDUSER }}
         key: ${{ secrets.GHCNIDSSHPK }}
         script: |
                     sleep 10
-                    sudo /usr/bin/sed -i 's/server websrv.cnid:58898 fail_timeout=2s max_fails=2 down;/server websrv.cnid:58898 fail_timeout=2s max_fails=2;/g' /etc/nginx/sites-available/cryptonodeid.conf
+                    sudo /usr/bin/sed -i 's/root /home/cnid/cryptonodeid/site2/dist;/root /home/cnid/cryptonodeid/site1/dist;/g' /etc/nginx/sites-available/cryptonodeid
                     sudo /usr/bin/systemctl reload nginx.service
-    - name: Down LB Site2
+    - name: Failback to Site1
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.GHCNIDLB }}
@@ -57,14 +57,4 @@ jobs:
         script: |
                     sleep 10
                     cd ~/cryptonodeid/site2
-                    npm run build    
-    - name: Up LB Site2
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.GHCNIDLB }}
-        username: ${{ secrets.GHCNIDUSER }}
-        key: ${{ secrets.GHCNIDSSHPK }}
-        script: |
-                    sleep 10
-                    sudo /usr/bin/sed -i 's/server websrv.cnid:58899 fail_timeout=2s max_fails=2 down;/server websrv.cnid:58899 fail_timeout=2s max_fails=2;/g' /etc/nginx/sites-available/cryptonodeid.conf
-                    sudo /usr/bin/systemctl reload nginx.service
+                    npm run build
