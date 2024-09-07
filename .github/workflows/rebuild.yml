@@ -16,7 +16,7 @@ jobs:
         key: ${{ secrets.GHCNIDSSHPK }}
         script: |
                     sleep 300
-                    sudo /usr/bin/sed -i 's/root /home/cnid/cryptonodeid/site1/dist;/root /home/cnid/cryptonodeid/site2/dist;/g' /etc/nginx/sites-available/cryptonodeid
+                    sudo /usr/bin/sed -i 's|root /home/cnid/cryptonodeid/site1/dist;|root /home/cnid/cryptonodeid/site2/dist;|g' /etc/nginx/sites-available/cryptonodeid
                     sudo /usr/bin/systemctl reload nginx.service
     - name: Rebuild Site1
       uses: appleboy/ssh-action@master
@@ -28,7 +28,7 @@ jobs:
                     sleep 10
                     cd ~/cryptonodeid/site1
                     npm run build
-    - name: Up LB Site1
+    - name: Failback LB Site1
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.GHCNIDHOST }}
@@ -36,17 +36,7 @@ jobs:
         key: ${{ secrets.GHCNIDSSHPK }}
         script: |
                     sleep 10
-                    sudo /usr/bin/sed -i 's/root /home/cnid/cryptonodeid/site2/dist;/root /home/cnid/cryptonodeid/site1/dist;/g' /etc/nginx/sites-available/cryptonodeid
-                    sudo /usr/bin/systemctl reload nginx.service
-    - name: Failback to Site1
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.GHCNIDLB }}
-        username: ${{ secrets.GHCNIDUSER }}
-        key: ${{ secrets.GHCNIDSSHPK }}
-        script: |
-                    sleep 10
-                    sudo /usr/bin/sed -i 's/server websrv.cnid:58899 fail_timeout=2s max_fails=2;/server websrv.cnid:58899 fail_timeout=2s max_fails=2 down;/g' /etc/nginx/sites-available/cryptonodeid.conf
+                    sudo /usr/bin/sed -i 's|root /home/cnid/cryptonodeid/site2/dist;|root /home/cnid/cryptonodeid/site1/dist;|g' /etc/nginx/sites-available/cryptonodeid
                     sudo /usr/bin/systemctl reload nginx.service
     - name: Rebuild Site2
       uses: appleboy/ssh-action@master
