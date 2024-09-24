@@ -27,6 +27,7 @@ jobs:
         script: |
                     sleep 10
                     cd ~/cryptonodeid/site1
+                    git pull
                     npm run build
     - name: Failback LB Site1
       uses: appleboy/ssh-action@master
@@ -47,4 +48,5 @@ jobs:
         script: |
                     sleep 10
                     cd ~/cryptonodeid/site2
+                    git pull
                     npm run build
