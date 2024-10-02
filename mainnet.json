@@ -16,15 +16,15 @@
     "denom": "mpx",
     "delegate": "mxvaloper1r4c4ggz5t643kqgnjt9jww42lzfy03ktusuduc",
     "peers": "51d4372d05ff75f7c3eb49fbec1a83a974f2aae2@sentry1.cnd.biz.id:30656,1985bfd22cf1baeb5aaae6b40b13632c28303bd1@sentry2.cnd.biz.id:30656",
-    "public_peers": "ac63396aebfe6627a378b5f5b749b66b3b4be8ff@188.40.85.207:13056,aedb4ff19edd4363c67f1bd9e9f40104098fe2b8@146.190.25.59:26656",
+    "public_peers": "9afc8486857c340525ecc98d52c801139eb0c2c6@168.119.106.131:26656,16970585af5c78a4b9dd743e4ebc538aa63aac75@167.99.245.4:26656,9795aa2f9d463700cbd61862f8b29bf5bd47c042@138.68.84.81:26656,47c6cf530c081c3b24de5e6f846b4e721f4304f1@94.72.107.224:37656,2c8951227c667c8833e2930bc07ce1a9f0acbe28@64.226.94.244:26656",
     "rpc_url": "https://crossfi-mainnet-rpc.cryptonode.id",
     "api_url": "https://crossfi-mainnet-api.cryptonode.id",
     "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
     "snapshot": [
       {
         "latest_height": 0,
-        "timestamp": "2024-10-01_12:20:06",
-        "size": "336K"
+        "timestamp": "2024-10-02_00:22:18",
+        "size": "351K"
       }
     ]
   },
