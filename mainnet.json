@@ -22,9 +22,9 @@
     "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
     "snapshot": [
       {
-        "latest_height": 0,
-        "timestamp": "2024-10-02_12:20:07",
-        "size": "337K"
+        "latest_height": 8451289,
+        "timestamp": "2024-10-03_00:20:25",
+        "size": "537M"
       }
     ]
   },
