@@ -16,14 +16,14 @@
     "denom": "mpx",
     "delegate": "mxvaloper1r4c4ggz5t643kqgnjt9jww42lzfy03ktusuduc",
     "peers": "51d4372d05ff75f7c3eb49fbec1a83a974f2aae2@sentry1.cnd.biz.id:30656,1985bfd22cf1baeb5aaae6b40b13632c28303bd1@sentry2.cnd.biz.id:30656",
-    "public_peers": "9b5d516cb15f5818dddc887b285f80096adef2fc@184.107.57.137:14656,3ac1d36f85f590231f03d82f3d640aed82b65763@95.216.246.86:29656,1691364aea96f1430d2e96279975536179e297ee@158.220.82.116:656,164260c93cf8e2402a9a71387accb1114fbe1a29@38.242.142.168:48656",
+    "public_peers": "95e0485df732b30bc4a1f29c23905918e29aa170@65.108.227.112:26056,164260c93cf8e2402a9a71387accb1114fbe1a29@38.242.142.168:48656,91a729a33da6efa7c388f3830c6778316d8f7c51@144.76.74.73:26056,1691364aea96f1430d2e96279975536179e297ee@158.220.82.116:656,9b5d516cb15f5818dddc887b285f80096adef2fc@184.107.57.137:14656",
     "rpc_url": "https://crossfi-mainnet-rpc.cryptonode.id",
     "api_url": "https://crossfi-mainnet-api.cryptonode.id",
     "logo": "https://raw.githubusercontent.com/CryptoNodeID/chains/master/images/logos/crossfi.png",
     "snapshot": [
       {
         "latest_height": 0,
-        "timestamp": "2025-02-09_12:20:05",
+        "timestamp": "2025-02-10_00:20:04",
         "size": "39M"
       }
     ]
